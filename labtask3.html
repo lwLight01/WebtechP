@@ -1,145 +1,155 @@
-<DOCTYPE>
-    <html lang ="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Denotes requird information</title>
-            <link rel="stylesheet" href="labtask3.css">
-        </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="labtask3.css">
+</head>
 
-        <body>
-            <form
-                action="/donation"
-                method="POST">
+<body>
+    <div class="form-container">
+        <form action="/donation" method="POST">
             <p><small>* Denotes Required Information</small></p>
             <p>> 1 Donation &nbsp; > 2 Confirmation &nbsp; > Thank You!</p>
-            <h2>
-                Doner information
-            </h2>
+
+            <h2>Donor Information</h2>
+
             <label for="firstname">First Name*</label>
             <input type="text" id="firstname" name="firstname" required>
-            <label for="lastname">last Name*</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <label for="Company">Company</label>
-            <input type="text" id="Company" name="Company">
-            <label for="Address 1">Address 1*</label>
-            <input type="text" id="Address 1" name="Address 1" required>
-            <label for="Address 2">Address 2</label>
-            <input type="text" id="Address 2" name="Address 2" required>
-            <label for="City">City*</label>
-            <input type="City" id="City" name="City" required>
 
-            <label for="State">State*</label>
-            <select id="State" name="State" required>
-               <option value="Dhaka">Dhaka </option>
-               <option value="Rangpur">Rangpur</option>
-               <option value="Chittagong">Chittagong</option>
-               <option value="Barishal">Barishal</option>
-               <option value="Noakhali">Noakhali</option>
+            <label for="lastname">Last Name*</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+
+            <label for="address1">Address 1*</label>
+            <input type="text" id="address1" name="address1" required>
+
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2">
+
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State*</label>
+            <select id="state" name="state" required>
+                <option value="">Select a State</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Noakhali">Noakhali</option>
             </select>
 
-            <label for="Zipcode">Zipcode*</label>
-            <input type="text" id="Zipcode" name="Zipcode" required>
+            <label for="zipcode">Zip Code*</label>
+            <input type="text" id="zipcode" name="zipcode" required>
 
-            <label for="country">Country:</label>
+            <label for="country">Country*</label>
             <select id="country" name="country" required>
-                 <option value="Bangladesh">Bangladesh</option>
-                 <option value="USA">USA</option>
-                 <option value="India">India</option>
+                <option value="">Select a Country</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
                 <option value="UK">UK</option>
             </select>
 
-            <label for="Phone">Phone</label>
-            <input type="Phone" id="Phone" name="Phone">
-            <label for="Fax">Fax</label>
-            <input type="Fax" id="Fax" name="Fax">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="fax">Fax</label>
+            <input type="text" id="fax" name="fax">
+
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" required>
 
-            <label>Donation amount*</label>
-            <div class="Amount">
-               <input type="radio" id="none" name="amount" value="NONE" required>
-               <label for="none">None</label>
-               <input type="radio" id="50" name="amount" value="50" required>
-               <label for="50">50</label>
-               <input type="radio" id="75" name="amount" value="75" required>
-               <label for="75">75</label>
-               <input type="radio" id="100" name="amount" value="100" required>
-               <label for="100">100</label>
-               <input type="radio" id="250" name="amount" value="250" required>
-               <label for="250">250</label>
-               <input type="radio" id="Others" name="amount" value="Others" required>
-               <label for="Others">Others</label>
+            <label>Donation Amount*</label>
+            <div class="radio-group">
+                <label><input type="radio" name="amount" value="none"> None</label>
+                <label><input type="radio" name="amount" value="50"> $50</label>
+                <label><input type="radio" name="amount" value="75"> $75</label>
+                <label><input type="radio" name="amount" value="100"> $100</label>
+                <label><input type="radio" name="amount" value="250"> $250</label>
+                <label><input type="radio" name="amount" value="other"> Other</label>
             </div>
-            <label for="Amount">Other Amount*</label>
-            <input type="number" id="amount" name="amount" required>
-            <label for="Amount">Recurring Donation*</label>
-            <p><input type="checkbox" id="Recurring name="Recurring" required> I am interested in making this a recurring donation.</p>
 
-            <h2>
-              Honorium and Memorials Donation information
-            </h2>
+            <label for="otheramount">Other Amount</label>
+            <input type="number" id="otheramount" name="otheramount">
+
+            <p><input type="checkbox" id="recurring" name="recurring"> I am interested in giving on a regular basis.</p>
+
+            <h2>Honorarium and Memorial Donation Information</h2>
+
             <p>I would like to make this donation</p>
-            <input type="radio" name="donation_type" value="honor"> To Honor
-            <input type="radio" name="donation_type" value="memory"> In Memory Of
+            <label><input type="radio" name="donation_type" value="honor"> To Honor</label>
+            <label><input type="radio" name="donation_type" value="memory"> In Memory Of</label>
 
-            <label>Name</label>
-            <input type="text" name="honor_name">
+            <label for="honor_name">Name</label>
+            <input type="text" id="honor_name" name="honor_name">
 
-            <label>Acknowledge Donation to</label>
-            <input type="text" name="ack_donation">
+            <label for="ack_donation">Acknowledge Donation To</label>
+            <input type="text" id="ack_donation" name="ack_donation">
 
-            <label>Address</label>
-            <input type="text" name="ack_address">
+            <label for="ack_address">Address</label>
+            <input type="text" id="ack_address" name="ack_address">
 
-            <label>City</label>
-            <input type="text" name="ack_city">
+            <label for="ack_city">City</label>
+            <input type="text" id="ack_city" name="ack_city">
 
-            <label for="State">State*</label>
-            <select id="State" name="State" required>
-               <option value="Dhaka">Dhaka </option>
-               <option value="Rangpur">Rangpur</option>
-               <option value="Chittagong">Chittagong</option>
-               <option value="Barishal">Barishal</option>
-               <option value="Noakhali">Noakhali</option>
+            <label for="ack_state">State</label>
+            <select id="ack_state" name="ack_state">
+                <option value="">Select a State</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Noakhali">Noakhali</option>
             </select>
 
-            <label for="Zipcode">Zipcode*</label>
-            <input type="text" id="Zipcode" name="Zipcode" required>
-            
-            <div class="section">
+            <label for="ack_zip">Zip</label>
+            <input type="text" id="ack_zip" name="ack_zip">
+
             <h2>Additional Information</h2>
-            <p>Please enter your name, company or organization as you would like it to appear:</p>
-            <label>Name</label>
-            <input type="text" name="add_name">
+            <p>Please enter your name, company, or organization as you would like it to appear:</p>
 
-            <input type="checkbox"> I would like my gift to remain anonymous.<br>
-            <input type="checkbox"> My employer offers a matching gift program.<br>
-            <input type="checkbox"> Please save the cost of acknowledging this gift by not mailing a thank-you letter.<br>
+            <label for="add_name">Name</label>
+            <input type="text" id="add_name" name="add_name">
 
-            <label>Comments</label>
-            <textarea name="comments" placeholder="Type any questions or feedback here"></textarea>
+            <p>
+                <input type="checkbox"> I would like my gift to remain anonymous.<br>
+                <input type="checkbox"> My employer offers a matching gift program.<br>
+                <input type="checkbox"> Please save the cost of mailing a thank-you letter.<br>
+            </p>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Please type any questions or feedback here"></textarea>
 
             <p><b>How may we contact you?</b></p>
-            <input type="checkbox"> E-mail 
-            <input type="checkbox"> Postal Mail 
-            <input type="checkbox"> Telephone 
-            <input type="checkbox"> Fax 
+            <label><input type="checkbox"> E-mail</label>
+            <label><input type="checkbox"> Postal Mail</label>
+            <label><input type="checkbox"> Telephone</label>
+            <label><input type="checkbox"> Fax</label>
 
             <p>I would like to receive newsletters and updates via:</p>
-            <input type="checkbox"> E-mail 
-            <input type="checkbox"> Postal Mail 
+            <label><input type="checkbox"> E-mail</label>
+            <label><input type="checkbox"> Postal Mail</label>
 
-            
-            <p><input type="checkbox">I would like information about volunteering with the organization:</p>
+            <p><input type="checkbox"> I would like information about volunteering with the organization</p>
             <input type="text" name="feedback2">
 
-            <button type="reset">Reset</button>
-            <button type="continue">Continue</button>
+            <div class="button-group">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Continue">
+            </div>
 
-            <p>Donate online with confidence. You are on a secure server.</p>
-            <p>If you have any problem or questions, please contact <a href="support.com">support.</a></p>
-            </form>
-        </body>
-    </html>
-</DOCTYPE>
+            <p class="footer-text">
+                Donate online with confidence. You are on a secure server.<br>
+                If you have any problems or questions, please contact 
+                <a href="support.com">support</a>.
+            </p>
+        </form>
+    </div>
+    <script src="labtask4.js"></script>
+</body>
+</html>

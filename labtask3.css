@@ -1,67 +1,85 @@
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
-    }
-    .form-container {
-        width: 700px;
-        margin: auto;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    h2 {
-        color: #b30000;
-        border-bottom: 2px solid #b30000;
-        padding-bottom: 5px;
-    }
-    label {
-        font-weight: bold;
-        display: block;
-        margin-top: 10px;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    select,
-    textarea {
-        width: 98%;
-        padding: 8px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    input[type="radio"],
-    input[type="checkbox"] {
-        margin-right: 5px;
-    }
-    textarea {
-        height: 70px;
-    }
-    .section {
-        margin-bottom: 25px;
-    }
-    .button-group {
-        text-align: center;
-        margin-top: 15px;
-    }
-    input[type="submit"],
-    input[type="reset"] {
-        background-color: #b30000;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        margin: 5px;
-    }
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
-        background-color: #900000;
-    }
-    small {
-        color: #b30000;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 700px;
+    margin: auto;
+    background-color: #bccfe0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #b30000;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+textarea {
+    height: 70px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #b30000;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #900000;
+}
+
+small {
+    color: #b30000;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+}
