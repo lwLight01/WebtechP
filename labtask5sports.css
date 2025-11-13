@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ece0e0;
+    color: #333;
+}
+header {
+    background-color: #0f3d6b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+.tagline {
+    font-style: bold;
+    font-size: 12px;
+    color: #cce0ff;
+}
+nav {
+    background-color: #3079c2;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 8px;
+    transition: 0.3s;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #ffffff;
+}
+main {
+    flex: 5;
+    background-color: rgb(231, 223, 223);
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+article {
+    margin-bottom: 20px;
+}
+article h2 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+article time {
+    font-size: 13px;
+    color: rgb(77, 75, 75);
+}
+article img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+article p {
+    text-align: justify;
+    line-height: 1.5;
+}
+article a {
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+}
+aside {
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    height: auto;
+}
+aside h3, aside h4 {
+    color: #003366;
+    margin-top: 0;
+}
+aside ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+aside ul li {
+    margin-bottom: 8px;
+}
+aside a {
+    color: #003366;
+    text-decoration: none;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+.ad-box {
+    background-color: #cccccc;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+footer {
+    clear: both;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+footer a:hover {
+    color: yellow;
+}
