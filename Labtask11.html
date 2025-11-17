@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffe7e7;
+        }
+        .old-book {
+            background-color: #c2bfbf;
+        }
+        .new-book {
+            background-color: #d4ecd4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Library Management System</h2>
+
+    <label>Book Title:</label>
+    <input type="text" id="title">
+
+    <label>Publication Year:</label>
+    <input type="text" id="year"><br><br>
+
+    <button onclick="addBook()">Add Book</button>
+
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        function addBook() 
+        {
+            const title = document.getElementById("title").value.trim();
+            const year = document.getElementById("year").value.trim();
+            const currentYear = new Date().getFullYear();
+            const titleRegex = /^[A-Za-z]+$/;
+            if (!titleRegex.test(title)) 
+            {
+                alert("Title must contain alphabetic characters only.");
+                return;
+            }
+            if (!/^\d{4}$/.test(year) || year < 1900 || year > currentYear) 
+            {
+                alert("Year must be between 1900 and " + currentYear + ".");
+                return;
+            }
+            const tableBody = document.querySelector("#bookTable tbody");
+            const newRow = document.createElement("tr");
+            if (year < 2000) 
+            {
+                newRow.classList.add("old-book");
+            } else
+            {
+                newRow.classList.add("new-book");
+            }
+            newRow.innerHTML = `
+                <td>${title}</td>
+                <td>${year}</td>
+            `;
+            tableBody.appendChild(newRow);
+            document.getElementById("title").value = "";
+            document.getElementById("year").value = "";
+        }
+    </script>
+</body>
+</html>
