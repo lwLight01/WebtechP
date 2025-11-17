@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f1f3f6;
+            padding: 30px;
+            text-align: center;
+        }
+        .product-box{
+            width: 260px;
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            transition: 0.3s;
+        }
+        .product-box:hover{
+            outline: 3px solid #2370c9;
+            outline-offset: 6px;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .product-box img{
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .product-box h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .product-box p{
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        .price{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1c7c3a;
+        }
+        a.buy-btn{
+            text-decoration: none;
+            background: #4a90e2;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        a.buy-btn:hover{
+            background: #1f6dc9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-box">
+        <img src="" alt="Laptop">
+        <h3>Macboom Air M4 pro</main></h3>
+        <p>14-inch display, 8GB RAM, 512GB SSD, M4 Chip</p>
+        <div class="price">150000 BDT</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="product-box">
+        <img src="" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Noise-cancelling, 30h battery, Bluetooth 5.0.</p>
+        <div class="price">12000 BDT</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="product-box">
+        <img src="" alt="Smartwatch">
+        <h3>Smartwatch Ultra</h3>
+        <p>Heart-rate monitor, GPS, AMOLED display.</p>
+        <div class="price">$199</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+</body>
+</html>

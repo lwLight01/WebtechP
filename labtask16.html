@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Width Contact Bar</title>
+
+    <style>
+        body{
+            height: 1500px;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .contact-bar{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #d2aae9;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            border-top: 3px solid #0b63d1;
+            z-index: 9999;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
+            transition: 0.3s;
+        }
+        .contact-bar:hover{
+            background: #0b63d1;
+        }
+        .contact-bar a{
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        Contact Us | Phone: 017******** | Email: 
+        <a href="mailto:support@example.com">support@example.com</a>
+    </div>
+</body>
+</html>
