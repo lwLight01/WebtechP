@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <form>
+            <label for="name">Full Name:</label><br></br>
+            <input type="text" name="name" placeholder="Full Name" required /><br></br>
+            <label for="email">Email:</label><br></br>
+            <input type="email" name="email" placeholder="Email" required /><br></br>
+            <label for="password">Password:</label><br></br>
+            <input type="password" name="password" placeholder="Password" required />
+
+            <p> I am a: </p>
+            <div class="roles">
+                <button type="button" onclick="selectRole('seller')">Seller</button>
+                <button type="button" onclick="selectRole('buyer')">Buyer</button>
+                <button type="button" onclick="selectRole('admin')">Admin</button>
+            </div>
+
+            <button type="button" onclick="submitForm()">Create Account</button>
+        </form>
+    </body>
+</html>
